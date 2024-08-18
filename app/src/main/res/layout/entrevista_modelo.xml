@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#982B1C">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEntrevistas"
+        android:layout_width="match_parent"
+        android:layout_height="657dp"
+        android:background="#982B1C"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="#131842"
+        android:text="Regresar"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#131842"
+        android:text="Eliminar"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#131842"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

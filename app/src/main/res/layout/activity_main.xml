@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#982B1C"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgBtnTomarFotografia4"
+        android:layout_width="189dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Imagen capturada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCaputar4"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageView
+        android:id="@+id/imagenCaputar4"
+        android:layout_width="170dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Entrevista"
+        android:textSize="34sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtid"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="IdOrden"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtdescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnTomarFotografia4" />
+
+    <EditText
+        android:id="@+id/txtdescripcion"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+    <EditText
+        android:id="@+id/txtperiodista"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Periodista"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescripcion" />
+
+    <EditText
+        android:id="@+id/txtfecha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="datetime|date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtperiodista" />
+
+    <Button
+        android:id="@+id/btn_Ingresar"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="580dp"
+        android:backgroundTint="#131842"
+        android:text="Ingresar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Lista"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Lista"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#131842"
+        android:text="Lista de Entrevista"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Escuchar"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#131842"
+        android:text="Escuchar Entrevista"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toEndOf="@+id/btn_Elim_Actua"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Lista"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <Button
+        android:id="@+id/btn_Elim_Actua"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#131842"
+        android:text="Eliminar Y Actualizar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Ingresar"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/btn_InicioGrab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="#131842"
+        android:text="Iniciar Grabación"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_DetenerGrab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_InicioGrab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="#131842"
+        android:text="Detener Grabación"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toEndOf="@+id/btn_InicioGrab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
